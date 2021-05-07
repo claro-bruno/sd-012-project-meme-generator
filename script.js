@@ -1,3 +1,4 @@
+const container = document.querySelector('#meme-image-container');
 function addTextMeme() {
   const textInput = document.getElementById('text-input');
   const memeText = document.getElementById('meme-text');
@@ -24,7 +25,6 @@ function addImageMeme() {
 addImageMeme();
 
 function changeBorderFire() {
-  const container = document.querySelector('#meme-image-container');
   const fireButton = document.querySelector('#fire');
   fireButton.addEventListener('click', () => {
     container.style.border = 'red dashed 3px';
@@ -33,7 +33,6 @@ function changeBorderFire() {
 changeBorderFire();
 
 function changeBorderWater() {
-  const container = document.querySelector('#meme-image-container');
   const waterButton = document.querySelector('#water');
   waterButton.addEventListener('click', () => {
     container.style.border = 'blue double 5px';
@@ -42,7 +41,6 @@ function changeBorderWater() {
 changeBorderWater();
 
 function changeBorderEarth() {
-  const container = document.querySelector('#meme-image-container');
   const earthButton = document.querySelector('#earth');
   earthButton.addEventListener('click', () => {
     container.style.border = 'green groove 6px';
@@ -51,12 +49,12 @@ function changeBorderEarth() {
 changeBorderEarth();
 
 function memes() {
-    const images = document.querySelectorAll('#ready-memes img');
-    const memeImage = document.querySelector('#meme-image');
-    for (let index = 0; index < images.length; index += 1) {
-        images[index].addEventListener('click', (event) => {
-            memeImage.src = event.target.src;
-        })
-    }
+  const images = document.querySelectorAll('#ready-memes img');
+  const memeImage = document.querySelector('#meme-image');
+  for (let index = 0; index < images.length; index += 1) {
+    images[index].addEventListener('click', (event) => {
+      memeImage.src = event.target.src;
+    });
+  }
 }
 memes();
