@@ -1,5 +1,5 @@
 body {
-    text-align: center;
+  text-align: center;
 }
 
 #meme-image-container {
@@ -7,7 +7,7 @@ body {
   width: 600px;
   height: 600px;
   position: relative;
-  padding: 0px;
+  padding: 0;
   margin: 30px;
   border: 1px solid black;
   background-color: white;
@@ -17,8 +17,8 @@ body {
   z-index: 1;
   width: 600px;
   height: 600px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 #meme-text {
@@ -29,10 +29,10 @@ body {
   top: 500px;
   left: 0;
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   margin: 10px;
-  text-shadow: 1px 1px 10px rgba(0 , 0 , 0 , 0.7);
+  text-shadow: 5px 5px 5px black;
   font-family: sans-serif;
 }
