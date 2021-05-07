@@ -10,13 +10,19 @@
 <body>
     <header id="title">Meme Generator</header>
     <section id="preferences">
-        <input type="text" id="text-input">
-        <button id="meme-insert">Escolher arquivo</button>
+        <section id="text">
+            <p>Texto:</p>
+            <input type="text" id="text-input">
+        </section>
+        <section id="image-upload">
+            <p>Foto:</p>
+            <input type="file" name="meme-insert" id="meme-insert" accept="image/png, image/jpeg">
+        </section>
     </section>
     <section id="meme-section">
         <div id="meme-image-container">
             <p id="meme-text"></p>
-            <img id="meme-image">
+            <img id="meme-image" src="">
         </div>
     </section>
     <section id="border-style">
