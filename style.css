@@ -1,0 +1,16 @@
+#meme-image-container {
+    width: 500px;
+    height: 500px;
+}
+
+#meme-image {
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+    position: absolute;
+}
+
+#meme-text {
+    z-index: 2;
+    position: absolute;
+}
