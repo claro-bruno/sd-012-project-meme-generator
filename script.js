@@ -28,8 +28,16 @@ function addImagem() {
 inputImg.addEventListener('change', addImagem);
 
 function addBorda(event) {
-    let cor = event.target.style.backgroundcolor;
-    container.style.border = '1px solid '+cor;
+    let bordaFire = '3px dashed red';
+    let bordaWater = '5px double blue';
+    let bordaEarth = '6px groove green';
+    if (event.target === botaoFogo) {
+        container.style.border = bordaFire;
+    } else if (event.target === botaoAgua) {
+        container.style.border = bordaWater;
+    } else {
+        container.style.border = bordaEarth;
+    }
 }
 
 botaoFogo.addEventListener('click', addBorda);
