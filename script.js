@@ -49,3 +49,14 @@ function changeBorderEarth() {
   });
 }
 changeBorderEarth();
+
+function memes() {
+    const images = document.querySelectorAll('#ready-memes img');
+    const memeImage = document.querySelector('#meme-image');
+    for (let index = 0; index < images.length; index += 1) {
+        images[index].addEventListener('click', (event) => {
+            memeImage.src = event.target.src;
+        })
+    }
+}
+memes();

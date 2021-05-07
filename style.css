@@ -21,3 +21,18 @@
     text-shadow: black 5px 5px 5px;
     word-wrap: break-word;
 }
+
+.miniature {
+    width: 100px;
+    height: 100px;
+}
+
+#fire {
+    background-color: red;
+}
+#water {
+    background-color: blue;
+}
+#earth {
+    background-color: green;
+}
