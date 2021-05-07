@@ -16,4 +16,5 @@ function insereTexto (){
 };
 
 //  adiciona eventListener em text-input
-caminhoTextInput.addEventListener("change", insereTexto);
+caminhoTextInput.addEventListener("input", insereTexto);
+

@@ -7,5 +7,11 @@
 }
 
 #meme-image-container {
-    
+
+}
+
+#meme-text {
+    font-size: 50px;
+    position: absolute;
+    z-index: 2;
 }
