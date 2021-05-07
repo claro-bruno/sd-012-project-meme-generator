@@ -10,6 +10,11 @@ function textUpdate() {
   memeTxt.innerText = txtInput.value;
 }
 
+function pickModel(event) {
+  const img = document.getElementById('meme-image');
+  img.src = event.target.src;
+}
+
 function imageUpdate() {
   const img = document.getElementById('meme-image');
   img.src = URL.createObjectURL(imgInput.files[0]);
@@ -30,8 +35,13 @@ function earth() {
 window.onload = function pageLoad() {
   txtInput.addEventListener('keyup', textUpdate);
   imgInput.addEventListener('change', imageUpdate);
-  
+
   btnFire.addEventListener('click', fire);
   btnWater.addEventListener('click', water);
   btnEarth.addEventListener('click', earth);
+
+  const models = document.getElementsByClassName('model');
+  for (let index = 0; index < models.length; index += 1) {
+    models[index].addEventListener('click', pickModel);
+  }
 };

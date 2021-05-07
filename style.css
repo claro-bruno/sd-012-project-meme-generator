@@ -50,3 +50,12 @@ body {
 #earth {
   background-color: green;
 }
+
+#models {
+  margin: 10px;
+}
+
+#models img {
+  width: 200px;
+  height: 200px;
+}
