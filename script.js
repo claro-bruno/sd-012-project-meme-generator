@@ -13,7 +13,7 @@ botaoTerra.style.backgroundcolor = 'green';
 
 function addTexto() {
     if (inputTexto.value.length > 0) {
-        textoMeme.innerHTML = inputTexto.value;
+        textoMeme.innerText = inputTexto.value;
     }
 }
 
