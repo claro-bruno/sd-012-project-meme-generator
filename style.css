@@ -1,5 +1,6 @@
 body {
   font-family: Josefin Sans, sans-serif;
+  font-size: large;
 }
 
 input {
@@ -30,4 +31,35 @@ img {
   font-size: 30px;
   color: white;
   text-shadow: black 5px 5px 5px;
+}
+
+#styleButtons button {
+  border: 1px;
+  border-radius: 5px;
+  font-size: large;
+  margin-left: 20px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#miniatures {
+  margin-top: 20px;
+}
+
+#miniatures img{
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
 }
