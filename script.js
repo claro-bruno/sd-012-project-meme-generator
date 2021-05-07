@@ -11,6 +11,7 @@ const labelText = document.createElement('label');
 labelText.htmlFor = 'text-input';
 
 const inputText = document.createElement('input');
+inputText.maxLength = 60;
 inputText.type = 'text';
 inputText.id = 'text-input';
 
