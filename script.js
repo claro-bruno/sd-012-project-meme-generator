@@ -6,6 +6,7 @@ const botaoFire = document.querySelector('#fire');
 const botaoWater = document.querySelector('#water');
 const botaoEarth = document.querySelector('#earth');
 const memeContainer = document.querySelector('#meme-image-container');
+const imagensDeMemes = document.querySelectorAll('.meme-pronto');
 
 // Ideia from https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 
@@ -41,3 +42,13 @@ function adicionandoBordas() {
 }
 
 adicionandoBordas();
+
+function usandoImagemDoExemplo() {
+  for (let index = 0; index < imagensDeMemes.length; index += 1) {
+    imagensDeMemes[index].addEventListener('click', () => {
+      imagem.src = imagensDeMemes[index].src;
+    });
+  }
+}
+
+usandoImagemDoExemplo();
