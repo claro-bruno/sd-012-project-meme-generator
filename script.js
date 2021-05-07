@@ -1,12 +1,16 @@
-const inputImage = document.querySelector('#meme-insert');
+const inputImagem = document.querySelector('#meme-insert');
 const imagem = document.querySelector('#meme-image');
-const inputText = document.querySelector('#text-input');
-const text = document.querySelector('#meme-text')
+const inputTexto = document.querySelector('#text-input');
+const texto = document.querySelector('#meme-text');
+const botaoFire = document.querySelector('#fire');
+const botaoWater = document.querySelector('#water');
+const botaoEarth = document.querySelector('#earth');
+const memeContainer = document.querySelector('#meme-image-container');
 
 // Ideia from https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 
 function adicionandoImagemNoContainer() {
-  inputImage.addEventListener('change', (event) => {
+  inputImagem.addEventListener('change', (event) => {
     imagem.src = URL.createObjectURL(event.target.files[0]);
     imagem.onload = () => {
       URL.revokeObjectURL(imagem.src);
@@ -17,9 +21,23 @@ function adicionandoImagemNoContainer() {
 adicionandoImagemNoContainer();
 
 function adicionandoTextoNoContainer() {
-  inputText.addEventListener('change', () => {
-    text.innerText = inputText.value;
+  inputTexto.addEventListener('keyup', () => {
+    texto.innerText = inputTexto.value;
   });
 }
 
 adicionandoTextoNoContainer();
+
+function adicionandoBordas() {
+  botaoFire.addEventListener('click', () => {
+    memeContainer.style.border = '3px dashed red';
+  });
+  botaoWater.addEventListener('click', () => {
+    memeContainer.style.border = '5px double blue';
+  });
+  botaoEarth.addEventListener('click', () => {
+    memeContainer.style.border = '6px groove green';
+  });
+}
+
+adicionandoBordas();
