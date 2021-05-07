@@ -37,7 +37,7 @@ function adicionandoBordas() {
     memeContainer.style.border = '5px double rgb(0, 0, 255)';
   });
   botaoEarth.addEventListener('click', () => {
-    memeContainer.style.border = '6px groove rgb(0, 255, 0)';
+    memeContainer.style.border = '6px groove rgb(0, 128, 0)';
   });
 }
 
