@@ -1,6 +1,6 @@
 let getMemeContainer;
+let image;
 const CarregarArquivo = (event) => {
-  const image = document.getElementById('meme-image');
   image.src = URL.createObjectURL(event.target.files[0]);
 }
 
@@ -33,12 +33,23 @@ function earth() {
   })
 }
 
+function memes() {
+  const modelos = document.getElementsByClassName('model');
+  for (let i = 0; i < modelos.length; i += 1) {
+    modelos[i].addEventListener('click', (event) => {
+      image.src = event.target.src;
+    })
+  }
+}
+
 window.onload = () => {
 
   getMemeContainer = document.getElementById('meme-image-container');
+  image = document.getElementById('meme-image');
 
   digitarTextoMeme();
   fire();
   water();
   earth();
+  memes();
 }

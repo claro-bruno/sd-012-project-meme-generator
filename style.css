@@ -2,10 +2,15 @@
   padding: 0;
 }
 
+body {
+  width: min(90vw , 700px);
+  margin: auto;
+}
+
 #meme-image-container {
   width: 300px;
   height: 300px;
-  margin: 20px;
+  margin: auto;
   border: 1px solid black;
   background-color: white;
   z-index: 0;
@@ -42,4 +47,24 @@
 
 #water {
   background-color: blue;
+}
+
+#buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#models {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#opcoes {
+  text-align: center;
+  padding: 2rem;
+}
+
+.model {
+  width: 130px;
+  height: 130px;
 }
