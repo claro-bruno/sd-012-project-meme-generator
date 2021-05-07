@@ -7,7 +7,7 @@ function textUpdate() {
 }
 
 function imageUpdate() {
-  const img = document.getElementById('image');
+  const img = document.getElementById('meme-image');
   img.src = URL.createObjectURL(imgInput.files[0]);
 }
 
