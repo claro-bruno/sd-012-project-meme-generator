@@ -57,3 +57,41 @@ function renderImage() {
 }
 
 memeInsert.addEventListener('change', renderImage);
+
+function createButton(id, text, color) {
+  const btn = document.createElement('button');
+  btn.id = id;
+  btn.innerHTML = text;
+  btn.style.backgroundColor = color;
+  return btn;
+}
+
+const btnFire = createButton('fire', 'Fire', 'red');
+
+function toBorderFire() {
+  memeImageContainer.style.border = 'dashed 3px red';
+}
+
+btnFire.addEventListener('click', toBorderFire);
+
+content.appendChild(btnFire);
+
+const btnWater = createButton('water', 'Water', 'blue');
+
+function toBorderWater() {
+  memeImageContainer.style.border = 'double 5px blue';
+}
+
+btnWater.addEventListener('click', toBorderWater);
+
+content.appendChild(btnWater);
+
+const btnEarth = createButton('earth', 'Earth', 'green');
+
+function toBorderEarth() {
+  memeImageContainer.style.border = 'groove 6px green';
+}
+
+btnEarth.addEventListener('click', toBorderEarth);
+
+content.appendChild(btnEarth);
