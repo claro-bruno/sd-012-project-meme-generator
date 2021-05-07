@@ -15,10 +15,37 @@ function addImageMeme() {
   imageInput.addEventListener('change', (event) => {
     const file = event.target.files[0];
     const fileReader = new FileReader();
-    fileReader.onloadend =  () => {
+    fileReader.onloadend = () => {
       imageOutput.src = fileReader.result;
     };
     fileReader.readAsDataURL(file);
   });
 }
 addImageMeme();
+
+function changeBorderFire() {
+  const container = document.querySelector('#meme-image-container');
+  const fireButton = document.querySelector('#fire');
+  fireButton.addEventListener('click', () => {
+    container.style.border = 'red dashed 3px';
+  });
+}
+changeBorderFire();
+
+function changeBorderWater() {
+  const container = document.querySelector('#meme-image-container');
+  const waterButton = document.querySelector('#water');
+  waterButton.addEventListener('click', () => {
+    container.style.border = 'blue double 5px';
+  });
+}
+changeBorderWater();
+
+function changeBorderEarth() {
+  const container = document.querySelector('#meme-image-container');
+  const earthButton = document.querySelector('#earth');
+  earthButton.addEventListener('click', () => {
+    container.style.border = 'green groove 6px';
+  });
+}
+changeBorderEarth();
