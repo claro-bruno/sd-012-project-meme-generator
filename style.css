@@ -1,0 +1,10 @@
+#meme-text {
+  z-index: 2;
+  position: absolute;
+  color: aliceblue;
+}
+
+#meme-image {
+  z-index: 1;
+  position: absolute;
+}
