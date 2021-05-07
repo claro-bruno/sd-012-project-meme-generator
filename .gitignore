@@ -3,3 +3,5 @@ node_modules
 node_modules
 cypress/reports
 cypress/screenshots
+meme-generator.sublime-project
+meme-generator.sublime-workspace
