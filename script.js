@@ -1,5 +1,7 @@
 const inputImage = document.querySelector('#meme-insert');
 const imagem = document.querySelector('#meme-image');
+const inputText = document.querySelector('#text-input');
+const text = document.querySelector('#meme-text')
 
 // Ideia from https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 
@@ -13,3 +15,11 @@ function adicionandoImagemNoContainer() {
 }
 
 adicionandoImagemNoContainer();
+
+function adicionandoTextoNoContainer() {
+  inputText.addEventListener('change', () => {
+    text.innerText = inputText.value;
+  });
+}
+
+adicionandoTextoNoContainer();
