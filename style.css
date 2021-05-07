@@ -1,8 +1,37 @@
+body {
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main {
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#title {
+    font-size: 40px;
+
+}
+
+#text {
+    margin-top: 40px;
+}
+
+#text p, #image-upload p {
+    display: inline-block;
+    width: 40px;
+    margin-right: 40px;
+}
+
 #text-input:focus {
     border: aqua
 }
 
 #meme-image-container {
+    margin: 20px 0;
     width: 400px;
     height: 400px;
     position: relative;
@@ -26,9 +55,14 @@
     word-wrap: break-word;
 }
 
-.miniature {
-    width: 100px;
-    height: 100px;
+#border-style {
+    margin-bottom: 40px;
+}
+
+#border-style button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
 }
 
 #fire {
@@ -36,7 +70,18 @@
 }
 #water {
     background-color: blue;
+    margin-left: 30px;
 }
 #earth {
     background-color: green;
+    margin-left: 30px;
+}
+
+#ready-memes {
+    margin: 20px 0px;
+}
+
+.miniature {
+    width: 100px;
+    height: 100px;
 }
