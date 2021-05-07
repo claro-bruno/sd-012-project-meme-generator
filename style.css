@@ -19,3 +19,18 @@
     color: white;
     text-shadow: 5px 5px 5px black;
 }
+
+#fire {
+    background-color: red;
+    color: white;
+}
+
+#water {
+    background-color: blue;
+    color: white;
+}
+
+#earth {
+    background-color: green;
+    color: white;
+}
