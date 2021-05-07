@@ -1,7 +1,11 @@
 let getMemeContainer;
 let image;
-const CarregarArquivo = (event) => {
-  image.src = URL.createObjectURL(event.target.files[0]);
+let memeInsert;
+
+function carregarArquivo() {
+  memeInsert.addEventListener('change', (event) => {
+    image.src = URL.createObjectURL(event.target.files[0]);
+  })
 }
 
 function digitarTextoMeme() {
@@ -46,8 +50,10 @@ window.onload = () => {
 
   getMemeContainer = document.getElementById('meme-image-container');
   image = document.getElementById('meme-image');
+  memeInsert = document.getElementById('meme-insert');
 
   digitarTextoMeme();
+  carregarArquivo();
   fire();
   water();
   earth();
