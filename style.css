@@ -1,0 +1,30 @@
+body {
+  font-family: Josefin Sans, sans-serif;
+}
+
+input {
+  font-family: Josefin Sans, sans-serif;
+}
+
+#text-input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#meme-image-container {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+}
+
+img {
+  height: 250px;
+  width: 400px;
+}
+
+#meme-text {
+  margin-left: 10px;
+  margin-top: 200px;
+  position: absolute;
+}
