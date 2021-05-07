@@ -5,7 +5,9 @@ body {
 #meme-text {
   z-index: 2;
   position: absolute;
-  color: aliceblue;
+  color: white;
+  text-shadow: black 5px 5px 5px;
+  font-size: 30px;
 }
 
 #meme-image {

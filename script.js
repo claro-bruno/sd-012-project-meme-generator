@@ -49,7 +49,7 @@ function renderImage() {
   const fileReader = new FileReader();
   const path = memeInsert.files[0];
 
-  fileReader.onloadend = function () {
+  fileReader.onloadend = () => {
     memeImage.src = fileReader.result;
   };
   fileReader.readAsDataURL(path);
