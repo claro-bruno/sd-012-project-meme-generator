@@ -31,13 +31,13 @@ adicionandoTextoNoContainer();
 
 function adicionandoBordas() {
   botaoFire.addEventListener('click', () => {
-    memeContainer.style.border = '3px dashed red';
+    memeContainer.style.border = '3px dashed rgb(255, 0, 0)';
   });
   botaoWater.addEventListener('click', () => {
-    memeContainer.style.border = '5px double blue';
+    memeContainer.style.border = '5px double rgb(0, 0, 255)';
   });
   botaoEarth.addEventListener('click', () => {
-    memeContainer.style.border = '6px groove green';
+    memeContainer.style.border = '6px groove rgb(0, 255, 0)';
   });
 }
 
@@ -47,6 +47,7 @@ function usandoImagemDoExemplo() {
   for (let index = 0; index < imagensDeMemes.length; index += 1) {
     imagensDeMemes[index].addEventListener('click', () => {
       imagem.src = imagensDeMemes[index].src;
+      texto.innerText = '';
     });
   }
 }
