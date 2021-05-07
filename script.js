@@ -7,10 +7,6 @@ const botaoTerra = document.querySelector('#earth');
 const imgMeme = document.querySelector('#meme-image');
 const container = document.querySelector('#meme-image-container');
 
-botaoFogo.style.backgroundcolor = 'red';
-botaoAgua.style.backgroundcolor = 'blue';
-botaoTerra.style.backgroundcolor = 'green';
-
 function addTexto() {
     if (inputTexto.value.length > 0) {
         textoMeme.innerText = inputTexto.value;
