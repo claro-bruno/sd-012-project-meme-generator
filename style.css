@@ -19,6 +19,7 @@ body {
   height: 600px;
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 #meme-text {
@@ -35,4 +36,17 @@ body {
   margin: 10px;
   text-shadow: 5px 5px 5px black;
   font-family: sans-serif;
+  border: none;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
 }
