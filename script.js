@@ -27,7 +27,7 @@ btnEarth.addEventListener('click', () => {
 });
 
 const memeList = document.querySelectorAll('.meme-model');
-function showMeme () {
+function showMeme() {
   const image = document.querySelector('#meme-image');
   for (const meme of memeList) {
     meme.addEventListener('click', () => {
