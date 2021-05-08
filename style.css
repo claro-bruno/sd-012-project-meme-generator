@@ -8,9 +8,9 @@
 }
 
 #meme-image {
-height: 100%;
-width: 100%;
-z-index: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 #meme-text {
@@ -45,4 +45,10 @@ z-index: 1;
   color: white;
   margin-top: 10px;
   border-radius: 5px;
+}
+
+.meme-model {
+  margin-top: 10px;
+  width: 100px;
+  vertical-align: top;
 }

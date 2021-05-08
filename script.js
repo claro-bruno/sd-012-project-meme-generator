@@ -25,3 +25,14 @@ btnWater.addEventListener('click', () => {
 btnEarth.addEventListener('click', () => {
   container.style.border = '6px groove green';
 });
+
+const memeList = document.querySelectorAll('.meme-model');
+function showMeme () {
+  const image = document.querySelector('#meme-image');
+  for (const meme of memeList) {
+    meme.addEventListener('click', () => {
+      image.src = meme.src;
+    });
+  }
+}
+showMeme();
