@@ -6,6 +6,7 @@ const botaoAgua = document.querySelector('#water');
 const botaoTerra = document.querySelector('#earth');
 const imgMeme = document.querySelector('#meme-image');
 const container = document.querySelector('#meme-image-container');
+const sugestoes = document.querySelector('#imgs');
 
 function addTexto() {
     if (inputTexto.value.length > 0) {
@@ -16,7 +17,7 @@ function addTexto() {
 inputTexto.addEventListener('keyup', addTexto);
 
 function addImagem() {
-    if (this.files.length >0) {
+    if (this.files.length > 0) {
         imgMeme.src = URL.createObjectURL(this.files[0]);
     }
 }
@@ -39,3 +40,9 @@ function addBorda(event) {
 botaoFogo.addEventListener('click', addBorda);
 botaoAgua.addEventListener('click', addBorda);
 botaoTerra.addEventListener('click', addBorda);
+
+function addSuggestion(event) {
+    imgMeme.src = event.target.src;
+}
+
+sugestoes.addEventListener('click', addSuggestion);
