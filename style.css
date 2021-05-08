@@ -1,12 +1,19 @@
 #meme-image-container {
+  height: 400px;
+  width: 400px;
   position: relative;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 0;
 }
 
 #meme-image {
+height: 100%;
 
 }
 
 .meme-text {
   position: absolute;
   margin-top: 50px;
+  width: 100%;
 }
