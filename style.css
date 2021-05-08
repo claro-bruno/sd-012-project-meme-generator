@@ -27,10 +27,21 @@ h1 {
 }
 
 #meme-image-container {
+  position: relative;
   border: 1px solid black;
   height: 200px;
   width: 80%;
   margin: 0 auto;
+}
+
+.input-image {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+}
+
+#meme-text p {
+  position: absolute;
 }
 
 #section-custom-styles {
