@@ -95,3 +95,32 @@ function toBorderEarth() {
 btnEarth.addEventListener('click', toBorderEarth);
 
 content.appendChild(btnEarth);
+
+const memeReady = document.createElement('div');
+memeReady.className = 'meme-ready';
+content.appendChild(memeReady);
+
+function selectedImage(e) {
+  memeImage.src = e.target.src;
+}
+
+function createImg(id, path) {
+  const img = document.createElement('img');
+  img.id = id;
+  img.src = path;
+  img.className = 'ready-image';
+  img.addEventListener('click', selectedImage);
+  return img;
+}
+
+const meme1 = createImg('meme-1', './imgs/meme1.png');
+memeReady.appendChild(meme1);
+
+const meme2 = createImg('meme-2', './imgs/meme2.png');
+memeReady.appendChild(meme2);
+
+const meme3 = createImg('meme-3', './imgs/meme3.png');
+memeReady.appendChild(meme3);
+
+const meme4 = createImg('meme-4', './imgs/meme4.png');
+memeReady.appendChild(meme4);
