@@ -4,6 +4,10 @@ const textImage = document.querySelector('#meme-text');
 const fileSelector = document.querySelector('#meme-insert');
 const imageDisplay = document.querySelector('#meme-image');
 const allButtons = document.querySelectorAll('button');
+const memeUm = document.querySelector('#meme-1');
+const memeDois = document.querySelector('#meme-2');
+const memeTres = document.querySelector('#meme-3');
+const memeQuatro = document.querySelector('#meme-4');
 
 inputText.addEventListener('keyup', (event) => {
   textImage.innerHTML = event.target.value;
@@ -22,3 +26,10 @@ function differentBorders() {
 }
 
 differentBorders();
+
+document.addEventListener('click', (event) => {
+  if (event.target === memeUm || event.target === memeDois
+    || event.target === memeTres || event.target === memeQuatro) {
+    imageDisplay.src = event.target.src;
+  }
+});
