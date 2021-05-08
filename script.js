@@ -2,6 +2,10 @@ const content = document.createElement('div');
 content.className = 'content';
 document.body.appendChild(content);
 
+const title = document.createElement('h1');
+title.innerHTML = 'Meme Generator';
+content.appendChild(title);
+
 const textContainer = document.createElement('div');
 textContainer.className = 'text-container';
 
@@ -9,9 +13,11 @@ content.appendChild(textContainer);
 
 const labelText = document.createElement('label');
 labelText.htmlFor = 'text-input';
+labelText.innerHTML = 'Texto:';
 
 const inputText = document.createElement('input');
 inputText.maxLength = 60;
+inputText.spellcheck = false;
 inputText.type = 'text';
 inputText.id = 'text-input';
 
