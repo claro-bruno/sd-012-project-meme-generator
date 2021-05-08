@@ -55,6 +55,18 @@ h1 {
   margin: 0 auto;
 }
 
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
 #section-pre-made-memes {
   border: 1px solid black;
   height: 100px;width: 80%;
