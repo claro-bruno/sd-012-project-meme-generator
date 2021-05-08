@@ -41,13 +41,13 @@ button {
 }
 
 #fire {
-  background-color: rgb(255 0 0);
+  background-color: red;
 }
 
 #water {
-  background-color: rgb(0 0 255);
+  background-color: blue;
 }
 
 #earth {
-  background-color: rgb(0 255 0);
+  background-color: green;
 }
