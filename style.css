@@ -1,0 +1,60 @@
+body {
+  width: 1366px;
+  height: 768px;
+  border: 1px solid black;
+}
+
+#header-content {
+  width: 80%;
+  height: 15%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+#main-container {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#input-text-container {
+  width: 80%;
+  height: 8%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#text-input {
+  width: 70%;
+  height: 50%;
+  margin: auto;
+
+}
+
+#meme-image-container {
+  width: 80%;
+  height: 55%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#option-container {
+  width: 80%;
+  height: 30%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#footer-content {
+  width: 80%;
+  height: 8%;
+  margin: auto;
+  border: 1px solid black;
+}
