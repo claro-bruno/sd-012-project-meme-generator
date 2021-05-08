@@ -24,7 +24,7 @@ h1 {
   border: 1px solid black;
 }
 
-#input-text-container {
+#input-container {
   width: 80%;
   height: 8%;
   margin: auto;
@@ -32,17 +32,43 @@ h1 {
 }
 
 #text-input {
-  width: 70%;
+  width: 50%;
   height: 50%;
   margin: auto;
 
 }
 
-#meme-image-container {
+#meme-insert {
+  width: 40%;
+  height: 50%;
+  margin: auto;
+}
+
+#meme-container {
   width: 80%;
   height: 55%;
   margin: auto;
   border: 1px solid black;
+}
+
+#meme-image-container {
+  width: 70%;
+  height: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#meme-image {
+  width: fit-content;
+}
+
+
+#meme-text-container {
+  border: 1px solid black;
+}
+
+#meme-text {
+  font-size: 30px;
 }
 
 #option-container {
