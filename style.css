@@ -27,6 +27,7 @@ h1 {
 }
 
 #meme-image-container {
+  background-color: white;
   position: relative;
   border: 1px solid black;
   height: 200px;
@@ -40,8 +41,11 @@ h1 {
   width: 100%;
 }
 
-#meme-text p {
+#meme-text {
   position: absolute;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
 
 #section-custom-styles {
