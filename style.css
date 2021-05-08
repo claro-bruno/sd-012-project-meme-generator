@@ -1,0 +1,12 @@
+#meme-image-container {
+  position: relative;
+}
+
+#meme-image {
+
+}
+
+.meme-text {
+  position: absolute;
+  margin-top: 50px;
+}
