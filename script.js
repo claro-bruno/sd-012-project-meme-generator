@@ -15,13 +15,13 @@ textInput.addEventListener('keyup', insertText);
 const btnFire = document.querySelector('#fire');
 const btnWater = document.querySelector('#water');
 const btnEarth = document.querySelector('#earth');
-const container = document.querySelector('#meme-image-container')
+const container = document.querySelector('#meme-image-container');
 btnFire.addEventListener('click', () => {
   container.style.border = '3px dashed red';
 });
 btnWater.addEventListener('click', () => {
   container.style.border = '5px double blue';
 });
-btnEarth.addEventListener('click', () =>{
+btnEarth.addEventListener('click', () => {
   container.style.border = '6px groove green';
 });
