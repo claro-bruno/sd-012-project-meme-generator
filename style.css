@@ -1,0 +1,19 @@
+#meme-text {
+  color: red;
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+}
+
+#meme-image-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+#meme-image {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
