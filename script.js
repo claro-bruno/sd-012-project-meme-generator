@@ -6,7 +6,7 @@ function loadFile (event) {
 file.addEventListener('change', loadFile);
 
 const textInput = document.querySelector('#text-input');
-const memeText = document.querySelector('.meme-text');
+const memeText = document.querySelector('#meme-text');
 function insertText () {
   memeText.innerText = textInput.value;
 }
