@@ -39,14 +39,17 @@ body {
 
 #fire {
   background-color: red;
+  font-size: 20px;
 }
 
 #earth {
   background-color: green;
+  font-size: 20px;
 }
 
 #water {
   background-color: blue;
+  font-size: 20px;
 }
 
 #buttons {
