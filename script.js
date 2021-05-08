@@ -1,21 +1,22 @@
+const getMemeImage = document.getElementById('meme-image');
+const getMemeImgContainer = document.getElementById('meme-image-container');
+
 function setMemeText() {
-  let getTextInput = document.getElementById('text-input').value;
-  let getMemeText = document.getElementById('meme-text');
+  const getTextInput = document.getElementById('text-input').value;
+  const getMemeText = document.getElementById('meme-text');
   getMemeText.innerText = getTextInput;
 }
 
 function setMemeImg(event) {
-  let getMemeImage = document.getElementById('meme-image');
-  let urlImg = URL.createObjectURL(event.target.files[0]);
+  const urlImg = URL.createObjectURL(event.target.files[0]);
   getMemeImage.src = urlImg;
   getMemeImage.className = 'input-image';
 }
 
-const getMemeImgContainer = document.getElementById('meme-image-container');
 const getFileInput = document.getElementById('meme-insert');
 getFileInput.addEventListener('change', (event) => {
   setMemeImg(event);
-})
+});
 
 document.addEventListener('click', (event) => {
   if (event.target.id === 'fire') {
@@ -26,6 +27,25 @@ document.addEventListener('click', (event) => {
   }
   if (event.target.id === 'earth') {
     getMemeImgContainer.style.border = '6px groove green';
+  }
+});
+
+document.addEventListener('click', (event) => {
+  if (event.target.id === 'meme-1') {
+    const memeImg1 = document.getElementById('meme-1').src;
+    getMemeImage.src = memeImg1;
+  }
+  if (event.target.id === 'meme-2') {
+    const memeImg2 = document.getElementById('meme-2').src;
+    getMemeImage.src = memeImg2;
+  }
+  if (event.target.id === 'meme-3') {
+    const memeImg3 = document.getElementById('meme-3').src;
+    getMemeImage.src = memeImg3;
+  }
+  if (event.target.id === 'meme-4') {
+    const memeImg4 = document.getElementById('meme-4').src;
+    getMemeImage.src = memeImg4;
   }
 });
 

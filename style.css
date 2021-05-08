@@ -48,6 +48,14 @@ h1 {
   color: white;
 }
 
+h2 {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
 #section-custom-styles {
   border: 1px solid black;
   height: 100px;
@@ -69,8 +77,14 @@ h1 {
 
 #section-pre-made-memes {
   border: 1px solid black;
-  height: 100px;width: 80%;
+  height: 100px;
+  width: 80%;
   margin: 0 auto;
+}
+
+#section-pre-made-memes img {
+  width: 60px;
+  height: 60px;
 }
 
 footer {
