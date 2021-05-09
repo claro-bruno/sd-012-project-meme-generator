@@ -25,11 +25,11 @@ function displayImg(event) {
 
 function changeBorder(button) {
   if (button.target.id === 'fire') {
-    memeSection.style.border = 'dashed 3px red';
+    memeSection.style.border = 'dashed 3px rgb(255, 0, 0)';
   } else if (button.target.id === 'water') {
-    memeSection.style.border = 'double 3px blue';
+    memeSection.style.border = 'double 3px rgb(0, 0, 255)';
   } else if (button.target.id === 'earth') {
-    memeSection.style.border = 'groove 6px green'
+    memeSection.style.border = 'groove 6px rgb(0, 128, 0)'
   }
 }
 
