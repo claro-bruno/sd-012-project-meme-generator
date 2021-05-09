@@ -14,7 +14,7 @@ function getImage() {
   imageInput.addEventListener('change', (event) => {
     img.src = URL.createObjectURL(event.target.files[0]);
     img.onload = () => {
-      URL.revokeObjectURL(event);
+      URL.revokeObjectURL(event.target.files[0]);
     };
   });
 }
