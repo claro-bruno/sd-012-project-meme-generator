@@ -10,6 +10,8 @@ function createTextInput() {
   const inputContainer = document.querySelector('#input-container');
   const inputText = document.createElement('input');
   inputText.id = 'text-input';
+  inputText.placeholder = 'Ex.: Lorem Ipsum is simply dummy text of the printing and typesetting industry...';
+  inputText.maxLength = '60';
   inputContainer.appendChild(inputText);
 }
 
@@ -59,21 +61,27 @@ function initialize() {
   createMemeTextContainer();
   createMemeText();
   createMemeImage();
-  createMemeText();
 }
 initialize();
-
-function updateMemeText(inputText) {
-  const memeTextElement = document.querySelector('#meme-text');
-  memeTextElement.innerHTML = inputText;
-}
 
 const inputTextElement = document.querySelector('#text-input');
 
 function addText(event) {
-  updateMemeText(event.target.value);
+  if (event.target.value !== null) {
+    const text = event.target.value;
+    const memeTextElement = document.querySelector('#meme-text');
+    memeTextElement.innerText = text;
+  }
 }
 inputTextElement.addEventListener('input', addText);
+
+function updateMemeImage(imageFile, srcImage) {
+  const memeImageElement = document.querySelector('#meme-image');
+  memeImageElement.src = srcImage;
+  memeImageElement.onload = function () {
+    URL.revokeObjectURL(imageFile);
+  };
+}
 
 const inputImageElement = document.querySelector('#meme-insert');
 
@@ -81,11 +89,7 @@ function addImage() {
   const fileList = this.files;
   const numFile = fileList.length;
   const file = fileList[numFile - 1];
-  alert(numFile);
-  alert(file.name);
-  alert(file.size);
-  alert(file.type);
   const src = URL.createObjectURL(file);
-  alert(src);
+  updateMemeImage(file, src);
 }
 inputImageElement.addEventListener('change', addImage, false);
