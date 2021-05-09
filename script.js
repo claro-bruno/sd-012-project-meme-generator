@@ -1,3 +1,6 @@
+const imageInput = document.getElementById('meme-insert');
+const img = document.getElementById('meme-image');
+
 function getText() {
   const textInput = document.getElementById('text-input');
   const memeText = document.getElementById('meme-text');
@@ -7,4 +10,14 @@ function getText() {
   });
 }
 
+function getImage() {
+  imageInput.addEventListener('change', (event) => {
+    img.src = URL.createObjectURL(event.target.files[0]);
+    img.onload = () => {
+      URL.revokeObjectURL(event);
+    };
+  });
+}
+
 getText();
+getImage();

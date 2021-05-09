@@ -12,6 +12,25 @@ main {
   padding: 15px;
   background-color: white;
   margin: 10px 30px;
+  border-radius: 20px;
+}
+
+#meme-image-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  position: relative;
+  margin-top: 20px;
+}
+
+#meme-image-container img {
+  width: 300px;
+  height: 300px;
+}
+
+#meme-image-container p {
+  position: absolute;
+  bottom: 1px;
 }
 
 footer {
