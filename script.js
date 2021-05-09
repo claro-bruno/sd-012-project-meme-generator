@@ -12,7 +12,7 @@ function getText() {
 
 function getImage() {
   imageInput.addEventListener('change', (event) => {
-    img.src = URL.createObjectURL(event.target.files[0]);
+    img.src = URL.createObjectURL(event.target.files[0]); // Pesquisa do colega Eduardo Linhares da Turma 12. Source: https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL
     img.onload = () => {
       URL.revokeObjectURL(event.target.files[0]);
     };
@@ -42,9 +42,36 @@ function customizeButton() {
   }
 }
 
+function createImgReady() {
+  const parentElement = document.getElementById('meme-ready');
+  const imgId = ['meme-1', 'meme-2', 'meme-3', 'meme-4'];
+
+  for (let index = 0; index < imgId.length; index += 1) {
+    const memeReady = document.createElement('img');
+
+    memeReady.id = imgId[index];
+    memeReady.className = 'meme1-4';
+    memeReady.src = `./imgs/meme${index + 1}.png`;
+
+    parentElement.appendChild(memeReady);
+  }
+}
+
+function setImgReadyToMeme() {
+  const imgReady = document.querySelectorAll('.meme1-4');
+
+  for (let index = 0; index < imgReady.length; index += 1) {
+    imgReady[index].addEventListener('click', (event) => {
+      img.src = event.target.src;
+    });
+  }
+}
+
 getText();
 getImage();
 createCustomButton('fire', 'Fire &#128293');
 createCustomButton('water', 'Water &#128167');
 createCustomButton('earth', 'Earth \u26f0');
 customizeButton();
+createImgReady();
+setImgReadyToMeme();
