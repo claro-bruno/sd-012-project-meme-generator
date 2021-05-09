@@ -6,12 +6,14 @@ const imgInput = document.getElementById('meme-insert');
 const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
+const templates = document.getElementById('templates');
 
 textInput.addEventListener('keyup', addText);
 imgInput.addEventListener('change', displayImg);
 fireButton.addEventListener('click', changeBorder);
 waterButton.addEventListener('click', changeBorder);
 earthButton.addEventListener('click', changeBorder);
+templates.addEventListener('click', displayTemplate);
 
 function addText() {
   memeText.innerHTML = textInput.value;
@@ -22,12 +24,18 @@ function displayImg(event) {
 }
 
 function changeBorder(button) {
-  if (button.target.id === 'fire'){
+  if (button.target.id === 'fire') {
     memeSection.style.border = 'dashed 3px red';
-  } else if (button.target.id === 'water'){
+  } else if (button.target.id === 'water') {
     memeSection.style.border = 'double 3px blue';
   } else if (button.target.id === 'earth') {
     memeSection.style.border = 'groove 6px green'
+  }
+}
+
+function displayTemplate(event) {
+  if (event.target.id !== 'templates'){
+    memeImg.src = event.target.src;
   }
 }
 
