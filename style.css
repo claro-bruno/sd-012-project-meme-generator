@@ -32,6 +32,9 @@ main {
 #meme-image-container p {
   position: absolute;
   bottom: 1px;
+  text-shadow: black 5px 5px 5px;
+  font-size: 30px;
+  color: white;
 }
 
 footer {
