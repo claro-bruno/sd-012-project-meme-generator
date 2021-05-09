@@ -3,8 +3,8 @@ body {
 }
 
 #meme-image-container {
-  width: 600px;
-  height: 430px;
+  width: 500px;
+  height: 400px;
   margin-left: 90px;
   margin-top: 9px;
   border: solid 1px black;
@@ -13,12 +13,9 @@ body {
 
 #meme-text {
   position: absolute;
-  width: 49vw;
   z-index: 2;
-  text-align: center;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
-  font-weight: 900;
   color: white;
 }
 

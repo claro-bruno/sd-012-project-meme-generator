@@ -8,13 +8,6 @@ const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const templates = document.getElementById('templates');
 
-textInput.addEventListener('keyup', addText);
-imgInput.addEventListener('change', displayImg);
-fireButton.addEventListener('click', changeBorder);
-waterButton.addEventListener('click', changeBorder);
-earthButton.addEventListener('click', changeBorder);
-templates.addEventListener('click', displayTemplate);
-
 function addText() {
   memeText.innerHTML = textInput.value;
 }
@@ -27,15 +20,21 @@ function changeBorder(button) {
   if (button.target.id === 'fire') {
     memeSection.style.border = 'dashed 3px rgb(255, 0, 0)';
   } else if (button.target.id === 'water') {
-    memeSection.style.border = 'double 3px rgb(0, 0, 255)';
+    memeSection.style.border = 'double 5px rgb(0, 0, 255)';
   } else if (button.target.id === 'earth') {
-    memeSection.style.border = 'groove 6px rgb(0, 128, 0)'
+    memeSection.style.border = 'groove 6px rgb(0, 128, 0)';
   }
 }
 
 function displayTemplate(event) {
-  if (event.target.id !== 'templates'){
+  if (event.target.id !== 'templates') {
     memeImg.src = event.target.src;
   }
 }
 
+textInput.addEventListener('keyup', addText);
+imgInput.addEventListener('change', displayImg);
+fireButton.addEventListener('click', changeBorder);
+waterButton.addEventListener('click', changeBorder);
+earthButton.addEventListener('click', changeBorder);
+templates.addEventListener('click', displayTemplate);
