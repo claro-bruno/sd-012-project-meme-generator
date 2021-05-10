@@ -100,6 +100,33 @@ h1 {
   border: 1px solid black;
 }
 
+#border-options {
+  width: 100%;
+  height: 50%;
+}
+
+.border-option {
+  width: 5%;
+  height: 65%;
+  float: left;
+  margin: 12px;
+}
+
+#fire {
+  background-color: red;
+  margin-left: 426px;
+}
+
+#water {
+  background-color: blue;
+  margin-left: 90px;
+}
+
+#earth {
+  background-color: green;
+  margin-left: 90px;
+}
+
 #footer-content {
   width: 80%;
   height: 8%;
