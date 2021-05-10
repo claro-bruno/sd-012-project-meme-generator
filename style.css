@@ -27,6 +27,18 @@ body {
   color: white;
 }
 
+#meme-bottom-text {
+  position: absolute;
+  margin-top: 330px;
+  vertical-align: bottom;
+  z-index: 2;
+  width: 499px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+}
+
 #meme-image {
   z-index: 1;
   width: 100%;
@@ -58,7 +70,6 @@ body {
 
 #templates img {
   width: 60px;
-
   margin-right: 30px;
   vertical-align: middle;
 }

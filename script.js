@@ -1,6 +1,7 @@
 const textInput = document.getElementById('text-input');
 const bottomTextInput = document.getElementById('bottom-text-input');
 const memeText = document.getElementById('meme-text');
+const memeBottomText = document.getElementById('meme-bottom-text');
 const memeImg = document.getElementById('meme-image');
 const memeSection = document.getElementById('meme-image-container');
 const imgInput = document.getElementById('meme-insert');
@@ -9,10 +10,12 @@ const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const templates = document.getElementById('templates');
 
-
-function addText() {
-
-  memeText.innerHTML = textInput.value;
+function addText(event) {
+  if (event.target.id === 'text-input') {
+    memeText.innerHTML = event.target.value;
+  } else {
+    memeBottomText.innerHTML = event.target.value;
+  }
 }
 
 function displayImg(event) {
@@ -36,6 +39,7 @@ function displayTemplate(event) {
 }
 
 textInput.addEventListener('keyup', addText);
+bottomTextInput.addEventListener('keyup', addText);
 imgInput.addEventListener('change', displayImg);
 fireButton.addEventListener('click', changeBorder);
 waterButton.addEventListener('click', changeBorder);
