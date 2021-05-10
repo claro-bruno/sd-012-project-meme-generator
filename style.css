@@ -2,6 +2,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#input {
+  width: 500;
+  margin-left: 90px;
+}
+
+
 #meme-image-container {
   width: 500px;
   height: 400px;
@@ -14,6 +20,8 @@ body {
 #meme-text {
   position: absolute;
   z-index: 2;
+  width: 499px;
+  text-align: center;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
@@ -25,20 +33,32 @@ body {
   height: 100%;
 }
 
+#border-controls {
+  width: 500px;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
 #fire {
-  background-color:rgb(255, 0, 0);
+  background-color: red;
 }
 
 #water {
-  background-color: rgb(0, 0, 255);
+  background-color: blue;
 }
 
 #earth {
-  background-color: rgb(0, 128, 0);
+  background-color: green;
+}
+
+#templates {
+  margin-top: 30px;
+  margin-left: 90px;
 }
 
 #templates img {
   width: 60px;
-  vertical-align: middle;
 
+  margin-right: 30px;
+  vertical-align: middle;
 }

@@ -1,4 +1,5 @@
 const textInput = document.getElementById('text-input');
+const bottomTextInput = document.getElementById('bottom-text-input');
 const memeText = document.getElementById('meme-text');
 const memeImg = document.getElementById('meme-image');
 const memeSection = document.getElementById('meme-image-container');
@@ -8,7 +9,9 @@ const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const templates = document.getElementById('templates');
 
+
 function addText() {
+
   memeText.innerHTML = textInput.value;
 }
 

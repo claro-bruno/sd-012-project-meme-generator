@@ -10,18 +10,26 @@
 </head>
 
 <body>
-  <section>
+  <section id="input">
+    <label for="">Texto:</label>
     <input id="text-input" type="text" maxlength="60">
     <br>
+    <br>
+    <label for="">Bottom text:</label>
+    <input type="bottom-text-input" type="text" maxlength="60">
+    <br>
+    <br>
+    <label for="">Imagem:</label>
     <input type="file" accept="imgs" id="meme-insert">
   </section>
 
   <section id="meme-image-container">
     <h2 id="meme-text"></h2>
+    <h2 id="meme-bottom-text"></h2>
     <img id="meme-image" src="" alt="">
   </section>
 
-  <section>
+  <section id="border-controls">
     <button id="fire">Fire</button>
     <button id="water">Water</button>
     <button id="earth">Earth</button>
