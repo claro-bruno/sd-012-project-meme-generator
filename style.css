@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  margin-left: 200px;
 }
 
 #input {
   width: 500;
   margin-left: 90px;
 }
-
 
 #meme-image-container {
   width: 500px;
@@ -23,20 +28,24 @@ body {
   width: 499px;
   text-align: center;
   text-shadow: 5px 5px 5px black;
-  font-size: 30px;
+  font-size: 33px;
   color: white;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 4px;
 }
 
 #meme-bottom-text {
   position: absolute;
-  margin-top: 330px;
+  margin-top: 350px;
   vertical-align: bottom;
   z-index: 2;
   width: 499px;
   text-align: center;
   text-shadow: 5px 5px 5px black;
-  font-size: 30px;
+  font-size: 33px;
   color: white;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 4px;
 }
 
 #meme-image {
@@ -48,7 +57,7 @@ body {
 #border-controls {
   width: 500px;
   margin-left: 90px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 #fire {
@@ -64,7 +73,7 @@ body {
 }
 
 #templates {
-  margin-top: 30px;
+  margin-top: 15px;
   margin-left: 90px;
 }
 
