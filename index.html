@@ -11,9 +11,15 @@
 </head>
 <body>
   <section>
+    <label for="">Adicione texto:</label>
     <input type="" id="text-input">
-  </section>  
+  </section>
+  <section>
+    <label for="">Foto:</label>
+    <input type="file" id="meme-insert" onchange="loadImage(event)">
+  </section>
   <section id="meme-image-container">
+    <img id="meme-image"/>
     <p id="meme-text"></p>
   </section>
   <footer>
