@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#meme-image-container {
+  /* position: relative; */
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  font-size: 50px;
+  text-align: center;
+}
+
+#meme-text {
+ 
+  /* position: absolute; */
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+  word-wrap:break-word;
+  font-weight: bold;
+  color: white;
+  text-shadow: rgb(33, 54, 54) 5px 5px 10px;
+  text-transform: uppercase;
+}
