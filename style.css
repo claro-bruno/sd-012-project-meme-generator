@@ -39,3 +39,15 @@ body {
   height: 100%;
   background-size: cover;
 }
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}

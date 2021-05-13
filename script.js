@@ -17,4 +17,25 @@ let loadImage = function (event) {
   imagem.src = URL.createObjectURL(event.target.files[0]);  
 }
 
+const btnFire = document.getElementById('fire');
+const btnWater = document.getElementById('water');
+const btnEarth = document.getElementById('earth');
+const memeContainer = document.getElementById('meme-image-container');
 
+function fireEffect() {
+  memeContainer.style.border = '3px dashed red';
+}
+
+btnFire.addEventListener('click', fireEffect);
+
+function waterEffect() {
+  memeContainer.style.border = '5px double blue';
+}
+
+btnWater.addEventListener('click', waterEffect);
+
+function earthEffect() {
+  memeContainer.style.border = '6px groove green';
+}
+
+btnEarth.addEventListener('click', earthEffect);
