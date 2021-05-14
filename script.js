@@ -1,9 +1,5 @@
 const inputText = document.getElementById('text-input');
-const containerImagem = document.getElementById('meme-image-container');
 const memeTexto = document.getElementById('meme-text');
-// containerImagem.appendChild(memeTexto);
-const btnInsert = document.getElementById('meme-insert"');
-// btnInsert.innerHTML = 'Choose File';
 
 function AddText() {
   memeTexto.innerHTML = inputText.value;
@@ -11,11 +7,11 @@ function AddText() {
 
 inputText.addEventListener('keyup', AddText);
 
-let imagem = document.getElementById('meme-image');
+const imagem = document.getElementById('meme-image');
 
-let loadImage = function (event) {
-  imagem.src = URL.createObjectURL(event.target.files[0]);  
-}
+const loadImage = function (event) {
+  imagem.src = URL.createObjectURL(event.target.files[0]);
+};
 
 const btnFire = document.getElementById('fire');
 const btnWater = document.getElementById('water');
@@ -39,3 +35,24 @@ function earthEffect() {
 }
 
 btnEarth.addEventListener('click', earthEffect);
+
+const memesReadys = document.getElementById('memes-readys');
+
+function memeChoice() {
+  for (let index = 0; index < memesReadys.childElementCount * 2; index += 1) {
+    memesReadys.childNodes[index].addEventListener('click', function (event) {
+      imagem.src = event.target.src;
+      console.log(memesReadys.childElementCount);
+    });
+  }  
+}
+
+memeChoice();
+
+// function memeChoice() {
+//   for (let index =0; index < memesReadys.childElementCount; index +=1) {
+//     memeContainer.src = memesReadys.childNodes[index].src;
+//   }  
+// }
+
+// memesReadys.addEventListener('click', memeChoice);
