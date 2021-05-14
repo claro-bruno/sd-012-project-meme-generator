@@ -9,7 +9,7 @@ inputText.addEventListener('keyup', AddText);
 
 const imagem = document.getElementById('meme-image');
 
-const loadImage = function (event) {
+const loadImage = (event) => {
   imagem.src = URL.createObjectURL(event.target.files[0]);
 };
 
@@ -40,11 +40,11 @@ const memesReadys = document.getElementById('memes-readys');
 
 function memeChoice() {
   for (let index = 0; index < memesReadys.childElementCount * 2; index += 1) {
-    memesReadys.childNodes[index].addEventListener('click', function (event) {
+    memesReadys.childNodes[index].addEventListener('click', (event) => {
       imagem.src = event.target.src;
       console.log(memesReadys.childElementCount);
     });
-  }  
+  }
 }
 
 memeChoice();
@@ -52,7 +52,7 @@ memeChoice();
 // function memeChoice() {
 //   for (let index =0; index < memesReadys.childElementCount; index +=1) {
 //     memeContainer.src = memesReadys.childNodes[index].src;
-//   }  
+//   }
 // }
 
 // memesReadys.addEventListener('click', memeChoice);
