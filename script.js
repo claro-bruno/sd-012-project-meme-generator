@@ -2,6 +2,10 @@ const catchImageInput = document.getElementById('meme-insert');
 const catchImage = document.getElementById('meme-image');
 const catchTextInput = document.getElementById('text-input');
 const catchLegendElement = document.getElementById('meme-text');
+const catchMemeContainer = document.getElementById
+("meme-image-container");
+const catchAllButtons = document.getElementsByTagName('button');
+const catchInputContainer = document.getElementById('input-container');
 
 //Imprime na tela a legenda capturada no input
 catchTextInput.addEventListener('keyup', function(event) {
@@ -15,4 +19,34 @@ catchImageInput.addEventListener('change', function(event) {
     URL.revokeObjectURL(event);
   }
 })
+
+//cria três botões com os ids red blue e green
+const colorsArray = ['red', 'blue', 'green'];
+const btnNamesArray = ['Fire', 'Water', 'Earth'];
+const btnIdsArray = ['fire', 'water', 'earth'];
+
+for (let index = 0; index < colorsArray.length; index += 1) {
+  const newButton = document.createElement('button');
+  newButton.innerHTML = btnNamesArray[index];
+  newButton.id = btnIdsArray[index];
+  newButton.style.backgroundColor = colorsArray[index];
+  catchInputContainer.appendChild(newButton);
+}
+
+//adiciona listener de click em todos botões
+for (let index = 0; index < catchAllButtons.length; index += 1) {
+  catchAllButtons[index].addEventListener('click', changeBorder);
+}
+
+//define cada tipo de borda que cada um dos botões deve colocar no meme container
+function changeBorder(event) {
+  if(event.target.style.backgroundColor === 'red') {
+    catchMemeContainer.style.border = '3px dashed red';
+  } else if (event.target.style.backgroundColor === 'blue') {
+    catchMemeContainer.style.border = '5px double blue';
+  } else if (event.target.style.backgroundColor === 'green') {
+    catchMemeContainer.style.border = '6px groove green';
+  }
+}
+
 
