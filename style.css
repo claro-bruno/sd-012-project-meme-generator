@@ -23,5 +23,11 @@
   font-size: 30px;
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+}
+
+.preset {
+  width: 100px;
+  height: 100px;
 }
 
