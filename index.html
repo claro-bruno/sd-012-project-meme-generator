@@ -10,12 +10,18 @@
 <body>
   <section>
     <div>
-      <label for="text-input">Legenda do Meme</label>
+      <label for="text-input">Legenda do Meme:</label>
       <input id='text-input' class="legendinput" type="text" placeholder="Insira a legenda do meme aqui!">
     </div>
+    <div>
+      <label for="meme-insert">Imagem:</label>
+      <input type="file" accept="image/*" id="meme-insert">
+    </div>
+      <br>
   </section>
   <section>
     <div id="meme-image-container">
+      <img src="" alt="" id="meme-image">
       <p id='meme-text'></p>
     </div>
   </section>

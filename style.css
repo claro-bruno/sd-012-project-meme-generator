@@ -1,3 +1,22 @@
 .legendinput {
   width: 187px;
 }
+
+#meme-image-container {
+  width: 400px;
+  height: 400px;
+}
+
+#meme-image-container img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+}
+
+#meme-image-container p {
+  position: absolute;
+  z-index: 2;
+}
+
+
