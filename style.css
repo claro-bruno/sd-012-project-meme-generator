@@ -19,6 +19,9 @@
 #meme-image-container p {
   position: absolute;
   z-index: 2;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
 
 
