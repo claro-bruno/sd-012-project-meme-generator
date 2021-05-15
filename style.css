@@ -22,8 +22,8 @@
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-weight: 700;
 }
 
 .preset {
