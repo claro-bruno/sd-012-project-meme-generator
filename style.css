@@ -1,15 +1,31 @@
 body {
     margin: 0 auto;
     text-align: center;
-}        
-#meme-image {
-    position: relative;
-    
+}
+
+main {
+    margin:0 auto;
+    width: 80%;    
+}
+
+#meme-image-container{
+    background-color: white;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-content: center;
+    margin: 20px auto;   
 
 }
 
-#show-image {
+#meme-image {
+    position: relative;
+    display: flex;
+}
 
+#show-image {
+    max-width: 100%;    
 }
 
 
@@ -19,4 +35,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px black;
 }
