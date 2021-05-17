@@ -19,7 +19,7 @@ main {
 
 }
 
-#meme-image {
+#meme {
     position: relative;
     display: flex;
 }
@@ -49,4 +49,8 @@ main {
 
 #earth {
     background-color: rgb(0, 128, 0);
+}
+
+#memes {
+    margin-top: 20px;
 }
