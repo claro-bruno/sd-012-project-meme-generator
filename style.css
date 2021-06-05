@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#meme-image-container {
+  width: 200px;
+  height: 200px;
+  border: 1px double black;
+  background-color: white;
+  margin: 1%;
+}
+
+#meme-image {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted rebeccapurple;
+  margin: 1%;
+}
+
+#meme-text {
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  margin: 1%;
+}
