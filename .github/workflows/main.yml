@@ -36,7 +36,7 @@ jobs:
         id: cypress
         uses: betrybe/cypress-evaluator-action@v5
         with:
-          repository-test-name: 'betrybe/sd-0x-block5-project-meme-generator-tests'
+          repository-test-name: 'betrybe/sd-0x-project-meme-generator-tests'
           repository-test-branch: 'master'
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v2
